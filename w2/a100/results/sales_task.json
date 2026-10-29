@@ -1,0 +1,702 @@
+{
+  "task": "sales analysis with a local aggregation tool",
+  "records": [
+    {
+      "order": 1,
+      "region": "North",
+      "units": 1,
+      "unit_price": 20
+    },
+    {
+      "order": 2,
+      "region": "South",
+      "units": 2,
+      "unit_price": 25
+    },
+    {
+      "order": 3,
+      "region": "East",
+      "units": 3,
+      "unit_price": 30
+    },
+    {
+      "order": 4,
+      "region": "West",
+      "units": 4,
+      "unit_price": 35
+    },
+    {
+      "order": 5,
+      "region": "North",
+      "units": 5,
+      "unit_price": 40
+    },
+    {
+      "order": 6,
+      "region": "South",
+      "units": 6,
+      "unit_price": 20
+    },
+    {
+      "order": 7,
+      "region": "East",
+      "units": 7,
+      "unit_price": 25
+    },
+    {
+      "order": 8,
+      "region": "West",
+      "units": 1,
+      "unit_price": 30
+    },
+    {
+      "order": 9,
+      "region": "North",
+      "units": 2,
+      "unit_price": 35
+    },
+    {
+      "order": 10,
+      "region": "South",
+      "units": 3,
+      "unit_price": 40
+    },
+    {
+      "order": 11,
+      "region": "East",
+      "units": 4,
+      "unit_price": 20
+    },
+    {
+      "order": 12,
+      "region": "West",
+      "units": 5,
+      "unit_price": 25
+    },
+    {
+      "order": 13,
+      "region": "North",
+      "units": 6,
+      "unit_price": 30
+    },
+    {
+      "order": 14,
+      "region": "South",
+      "units": 7,
+      "unit_price": 35
+    },
+    {
+      "order": 15,
+      "region": "East",
+      "units": 1,
+      "unit_price": 40
+    },
+    {
+      "order": 16,
+      "region": "West",
+      "units": 2,
+      "unit_price": 20
+    },
+    {
+      "order": 17,
+      "region": "North",
+      "units": 3,
+      "unit_price": 25
+    },
+    {
+      "order": 18,
+      "region": "South",
+      "units": 4,
+      "unit_price": 30
+    },
+    {
+      "order": 19,
+      "region": "East",
+      "units": 5,
+      "unit_price": 35
+    },
+    {
+      "order": 20,
+      "region": "West",
+      "units": 6,
+      "unit_price": 40
+    },
+    {
+      "order": 21,
+      "region": "North",
+      "units": 7,
+      "unit_price": 20
+    },
+    {
+      "order": 22,
+      "region": "South",
+      "units": 1,
+      "unit_price": 25
+    },
+    {
+      "order": 23,
+      "region": "East",
+      "units": 2,
+      "unit_price": 30
+    },
+    {
+      "order": 24,
+      "region": "West",
+      "units": 3,
+      "unit_price": 35
+    },
+    {
+      "order": 25,
+      "region": "North",
+      "units": 4,
+      "unit_price": 40
+    },
+    {
+      "order": 26,
+      "region": "South",
+      "units": 5,
+      "unit_price": 20
+    },
+    {
+      "order": 27,
+      "region": "East",
+      "units": 6,
+      "unit_price": 25
+    },
+    {
+      "order": 28,
+      "region": "West",
+      "units": 7,
+      "unit_price": 30
+    },
+    {
+      "order": 29,
+      "region": "North",
+      "units": 1,
+      "unit_price": 35
+    },
+    {
+      "order": 30,
+      "region": "South",
+      "units": 2,
+      "unit_price": 40
+    },
+    {
+      "order": 31,
+      "region": "East",
+      "units": 3,
+      "unit_price": 20
+    },
+    {
+      "order": 32,
+      "region": "West",
+      "units": 4,
+      "unit_price": 25
+    },
+    {
+      "order": 33,
+      "region": "North",
+      "units": 5,
+      "unit_price": 30
+    },
+    {
+      "order": 34,
+      "region": "South",
+      "units": 6,
+      "unit_price": 35
+    },
+    {
+      "order": 35,
+      "region": "East",
+      "units": 7,
+      "unit_price": 40
+    },
+    {
+      "order": 36,
+      "region": "West",
+      "units": 1,
+      "unit_price": 20
+    },
+    {
+      "order": 37,
+      "region": "North",
+      "units": 2,
+      "unit_price": 25
+    },
+    {
+      "order": 38,
+      "region": "South",
+      "units": 3,
+      "unit_price": 30
+    },
+    {
+      "order": 39,
+      "region": "East",
+      "units": 4,
+      "unit_price": 35
+    },
+    {
+      "order": 40,
+      "region": "West",
+      "units": 5,
+      "unit_price": 40
+    },
+    {
+      "order": 41,
+      "region": "North",
+      "units": 6,
+      "unit_price": 20
+    },
+    {
+      "order": 42,
+      "region": "South",
+      "units": 7,
+      "unit_price": 25
+    },
+    {
+      "order": 43,
+      "region": "East",
+      "units": 1,
+      "unit_price": 30
+    },
+    {
+      "order": 44,
+      "region": "West",
+      "units": 2,
+      "unit_price": 35
+    },
+    {
+      "order": 45,
+      "region": "North",
+      "units": 3,
+      "unit_price": 40
+    },
+    {
+      "order": 46,
+      "region": "South",
+      "units": 4,
+      "unit_price": 20
+    },
+    {
+      "order": 47,
+      "region": "East",
+      "units": 5,
+      "unit_price": 25
+    },
+    {
+      "order": 48,
+      "region": "West",
+      "units": 6,
+      "unit_price": 30
+    }
+  ],
+  "expected": {
+    "totals": {
+      "North": 1320,
+      "South": 1415,
+      "East": 1405,
+      "West": 1460
+    },
+    "best_region": "West"
+  },
+  "runs": [
+    {
+      "mode": "cold",
+      "calls": [
+        {
+          "stage": "select_tool",
+          "start_ns": 1791355982789377849,
+          "end_ns": 1791355983146097058,
+          "wall_ms": 356.72155395150185,
+          "input_tokens": 1373,
+          "response": {
+            "text": "{\"tool\":\"aggregate_sales\",\"group_by\":\"region\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              14172,
+              3252,
+              59606,
+              47067,
+              2198,
+              4074,
+              3710,
+              3252,
+              3943,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "4763ab00f9b24459a03060dd7f9c76f1",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1373,
+              "weight_version": "default",
+              "completion_tokens": 12,
+              "cached_tokens": 0,
+              "e2e_latency": 0.35265326499938965
+            }
+          },
+          "parsed": {
+            "tool": "aggregate_sales",
+            "group_by": "region"
+          },
+          "reload_enqueued": false
+        },
+        {
+          "stage": "final_answer",
+          "start_ns": 1791355983149293098,
+          "end_ns": 1791355983972109576,
+          "wall_ms": 822.8168170899153,
+          "input_tokens": 1455,
+          "response": {
+            "text": "{\"totals\":{\"North\":1320,\"South\":1415,\"East\":1405,\"West\":1460},\"best_region\":\"West\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              84846,
+              22317,
+              25221,
+              788,
+              16,
+              18,
+              17,
+              15,
+              1335,
+              25018,
+              788,
+              16,
+              19,
+              16,
+              20,
+              1335,
+              36340,
+              788,
+              16,
+              19,
+              15,
+              20,
+              1335,
+              23306,
+              788,
+              16,
+              19,
+              21,
+              15,
+              51193,
+              15862,
+              20627,
+              3252,
+              23306,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "7fc69030894543db8517ebe37a8bfcfe",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1455,
+              "weight_version": "default",
+              "completion_tokens": 37,
+              "cached_tokens": 1369,
+              "e2e_latency": 0.8170247077941895
+            }
+          },
+          "parsed": {
+            "totals": {
+              "North": 1320,
+              "South": 1415,
+              "East": 1405,
+              "West": 1460
+            },
+            "best_region": "West"
+          },
+          "reload_enqueued": false
+        }
+      ],
+      "tool_ms": 0.017774291336536407,
+      "workflow_wall_ms": 1206.8906221538782,
+      "answer_correct": true
+    },
+    {
+      "mode": "gpu_reuse",
+      "calls": [
+        {
+          "stage": "select_tool",
+          "start_ns": 1791355983976126160,
+          "end_ns": 1791355984246394548,
+          "wall_ms": 270.2693408355117,
+          "input_tokens": 1373,
+          "response": {
+            "text": "{\"tool\":\"aggregate_sales\",\"group_by\":\"region\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              14172,
+              3252,
+              59606,
+              47067,
+              2198,
+              4074,
+              3710,
+              3252,
+              3943,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "d088714f36b044c79e1d9b7c10489935",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1373,
+              "weight_version": "default",
+              "completion_tokens": 12,
+              "cached_tokens": 1372,
+              "e2e_latency": 0.26725339889526367
+            }
+          },
+          "parsed": {
+            "tool": "aggregate_sales",
+            "group_by": "region"
+          },
+          "reload_enqueued": false
+        },
+        {
+          "stage": "final_answer",
+          "start_ns": 1791355984250689715,
+          "end_ns": 1791355985065617186,
+          "wall_ms": 814.9282773956656,
+          "input_tokens": 1455,
+          "response": {
+            "text": "{\"totals\":{\"North\":1320,\"South\":1415,\"East\":1405,\"West\":1460},\"best_region\":\"West\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              84846,
+              22317,
+              25221,
+              788,
+              16,
+              18,
+              17,
+              15,
+              1335,
+              25018,
+              788,
+              16,
+              19,
+              16,
+              20,
+              1335,
+              36340,
+              788,
+              16,
+              19,
+              15,
+              20,
+              1335,
+              23306,
+              788,
+              16,
+              19,
+              21,
+              15,
+              51193,
+              15862,
+              20627,
+              3252,
+              23306,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "306899b6e9e64cdeb0907ea06433e934",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1455,
+              "weight_version": "default",
+              "completion_tokens": 37,
+              "cached_tokens": 1454,
+              "e2e_latency": 0.8111662864685059
+            }
+          },
+          "parsed": {
+            "totals": {
+              "North": 1320,
+              "South": 1415,
+              "East": 1405,
+              "West": 1460
+            },
+            "best_region": "West"
+          },
+          "reload_enqueued": false
+        }
+      ],
+      "tool_ms": 0.05698204040527344,
+      "workflow_wall_ms": 1092.7737690508366,
+      "answer_correct": true
+    },
+    {
+      "mode": "host_revisit",
+      "calls": [
+        {
+          "stage": "select_tool",
+          "start_ns": 1791355987135724697,
+          "end_ns": 1791355987522446192,
+          "wall_ms": 386.72160543501377,
+          "input_tokens": 1373,
+          "response": {
+            "text": "{\"tool\":\"aggregate_sales\",\"group_by\":\"region\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              14172,
+              3252,
+              59606,
+              47067,
+              2198,
+              4074,
+              3710,
+              3252,
+              3943,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "d45de940df974b1db4274348ea96bdeb",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1373,
+              "weight_version": "default",
+              "completion_tokens": 12,
+              "cached_tokens": 1372,
+              "e2e_latency": 0.3825557231903076
+            }
+          },
+          "parsed": {
+            "tool": "aggregate_sales",
+            "group_by": "region"
+          },
+          "reload_enqueued": true
+        },
+        {
+          "stage": "final_answer",
+          "start_ns": 1791355987525872348,
+          "end_ns": 1791355988352607085,
+          "wall_ms": 826.7351808026433,
+          "input_tokens": 1455,
+          "response": {
+            "text": "{\"totals\":{\"North\":1320,\"South\":1415,\"East\":1405,\"West\":1460},\"best_region\":\"West\"}",
+            "output_ids": [
+              198,
+              151667,
+              271,
+              151668,
+              271,
+              4913,
+              84846,
+              22317,
+              25221,
+              788,
+              16,
+              18,
+              17,
+              15,
+              1335,
+              25018,
+              788,
+              16,
+              19,
+              16,
+              20,
+              1335,
+              36340,
+              788,
+              16,
+              19,
+              15,
+              20,
+              1335,
+              23306,
+              788,
+              16,
+              19,
+              21,
+              15,
+              51193,
+              15862,
+              20627,
+              3252,
+              23306,
+              9207,
+              151645
+            ],
+            "meta_info": {
+              "id": "4eaa5dd2043d4730984fc1209d40a78c",
+              "finish_reason": {
+                "type": "stop",
+                "matched": 151645
+              },
+              "prompt_tokens": 1455,
+              "weight_version": "default",
+              "completion_tokens": 37,
+              "cached_tokens": 1454,
+              "e2e_latency": 0.8235616683959961
+            }
+          },
+          "parsed": {
+            "totals": {
+              "North": 1320,
+              "South": 1415,
+              "East": 1405,
+              "West": 1460
+            },
+            "best_region": "West"
+          },
+          "reload_enqueued": true
+        }
+      ],
+      "tool_ms": 0.017439015209674835,
+      "workflow_wall_ms": 1221.1802285164595,
+      "answer_correct": true
+    }
+  ],
+  "checks": {
+    "all_answers_correct": true,
+    "cold_first_call_uncached": true,
+    "warm_first_call_prefix_reused": true,
+    "host_first_call_reloaded": true,
+    "host_first_call_prefix_reused": true
+  },
+  "semantics": "Deterministic local task fixture, not a public benchmark. Cache-pressure calls use synthetic token IDs. No time-based prefetch or eviction policy is enabled."
+}

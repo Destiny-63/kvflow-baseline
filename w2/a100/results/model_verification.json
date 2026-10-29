@@ -1,0 +1,66 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "files": [
+    {
+      "file": "model-00001-of-00005.safetensors",
+      "bytes": 3996250744,
+      "sha256": "31d6a825ae35f11fb85b195b4c42c146c051e446433125a215336abdf95cbf5f"
+    },
+    {
+      "file": "model-00002-of-00005.safetensors",
+      "bytes": 3993160032,
+      "sha256": "5991236cea6fe21f3d43cab0f0e84448734fbbe0789816202989f2ddc9d18282"
+    },
+    {
+      "file": "model-00003-of-00005.safetensors",
+      "bytes": 3959604768,
+      "sha256": "c5185c4794be2d8a9784d5753c9922db38df478ce11f9ed0b415b7304d896836"
+    },
+    {
+      "file": "model-00004-of-00005.safetensors",
+      "bytes": 3187841392,
+      "sha256": "b5ee7de71fbf17db3d5704e0c8f2bc7d005ca9e1d7ca2aeb19827b0cfcaa917a"
+    },
+    {
+      "file": "model-00005-of-00005.safetensors",
+      "bytes": 1244659840,
+      "sha256": "20c2d6366ab85c90786ccdd829cd2b9e7d30ef3b2ebbb998280e7e4014b542ff"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 11422654,
+      "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    }
+  ],
+  "model_config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": 12288,
+    "max_position_embeddings": 40960,
+    "max_window_layers": 36,
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": null,
+    "rope_theta": 1000000,
+    "sliding_window": null,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.51.0",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  }
+}

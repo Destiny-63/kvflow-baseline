@@ -1,0 +1,230 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "dtype": "bfloat16",
+  "tp": 1,
+  "bytes_per_kv_token": 147456,
+  "gpu_kv_tokens": 4096,
+  "host_kv_tokens": 32768,
+  "cache_e2e": {
+    "input_tokens": 1024,
+    "summary": {
+      "cold": {
+        "wall_ms": [
+          131.18988648056984,
+          139.58395831286907,
+          136.612456291914,
+          141.19761623442173,
+          143.71779933571815
+        ],
+        "median_wall_ms": 139.58395831286907,
+        "median_forward_cuda_ms": 103.42092895507812
+      },
+      "gpu_hit": {
+        "wall_ms": [
+          49.007248133420944,
+          70.91394253075123,
+          73.03033210337162,
+          77.25991122424603,
+          71.80485501885414
+        ],
+        "median_wall_ms": 71.80485501885414,
+        "median_forward_cuda_ms": 40.56576156616211
+      },
+      "host_revisit": {
+        "wall_ms": [
+          102.03196853399277,
+          124.34252351522446,
+          107.93004184961319,
+          112.4633476138115,
+          114.47157710790634
+        ],
+        "median_wall_ms": 112.4633476138115,
+        "median_forward_cuda_ms": 40.45619201660156
+      }
+    },
+    "semantics": "Warm process, serial 1024-token requests, one generated token; host revisit follows six cache-pressure requests. Includes HTTP, scheduler, radix/controller and cache bookkeeping. Five samples do not establish tail latency."
+  },
+  "prefill": [
+    {
+      "input_tokens": 256,
+      "median_wall_ms": 73.41945357620716,
+      "median_forward_cuda_ms": 41.875457763671875,
+      "median_input_tokens_per_second": 3486.814291450423,
+      "median_forward_tokens_per_second": 6113.366006522492
+    },
+    {
+      "input_tokens": 1024,
+      "median_wall_ms": 141.02437533438206,
+      "median_forward_cuda_ms": 106.51136016845703,
+      "median_input_tokens_per_second": 7261.156077252601,
+      "median_forward_tokens_per_second": 9613.997965855046
+    },
+    {
+      "input_tokens": 2048,
+      "median_wall_ms": 240.5631747096777,
+      "median_forward_cuda_ms": 202.5840606689453,
+      "median_input_tokens_per_second": 8513.35622117399,
+      "median_forward_tokens_per_second": 10109.383696019198
+    },
+    {
+      "input_tokens": 3072,
+      "median_wall_ms": 352.9271241277456,
+      "median_forward_cuda_ms": 310.3590316772461,
+      "median_input_tokens_per_second": 8704.346563309364,
+      "median_forward_tokens_per_second": 9898.213637922054
+    }
+  ],
+  "reload": [
+    {
+      "pattern": "contiguous",
+      "mode": "enqueue_all_layers",
+      "tokens": 256,
+      "bytes": 37748736,
+      "median_wall_ms": 2.226189710199833,
+      "median_cuda_ms": 2.1964800357818604,
+      "wall_GB_per_second": 16.956657299710322
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "controller_layer_sync",
+      "tokens": 256,
+      "bytes": 37748736,
+      "median_wall_ms": 3.144902177155018,
+      "median_cuda_ms": 3.1262080669403076,
+      "wall_GB_per_second": 12.003151091379493
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "enqueue_all_layers",
+      "tokens": 1024,
+      "bytes": 150994944,
+      "median_wall_ms": 8.679556660354137,
+      "median_cuda_ms": 8.660351753234863,
+      "wall_GB_per_second": 17.39661942524138
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "controller_layer_sync",
+      "tokens": 1024,
+      "bytes": 150994944,
+      "median_wall_ms": 9.342405013740063,
+      "median_cuda_ms": 9.328144073486328,
+      "wall_GB_per_second": 16.162320492199676
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "enqueue_all_layers",
+      "tokens": 2048,
+      "bytes": 301989888,
+      "median_wall_ms": 17.84950029104948,
+      "median_cuda_ms": 17.83027172088623,
+      "wall_GB_per_second": 16.918674644994457
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "controller_layer_sync",
+      "tokens": 2048,
+      "bytes": 301989888,
+      "median_wall_ms": 18.73138826340437,
+      "median_cuda_ms": 18.717167854309082,
+      "wall_GB_per_second": 16.122130605236535
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "enqueue_all_layers",
+      "tokens": 4096,
+      "bytes": 603979776,
+      "median_wall_ms": 40.37089552730322,
+      "median_cuda_ms": 40.353790283203125,
+      "wall_GB_per_second": 14.960772311615498
+    },
+    {
+      "pattern": "contiguous",
+      "mode": "controller_layer_sync",
+      "tokens": 4096,
+      "bytes": 603979776,
+      "median_wall_ms": 40.96940532326698,
+      "median_cuda_ms": 40.954416275024414,
+      "wall_GB_per_second": 14.742214860926797
+    },
+    {
+      "pattern": "permuted",
+      "mode": "enqueue_all_layers",
+      "tokens": 256,
+      "bytes": 37748736,
+      "median_wall_ms": 1.7747282981872559,
+      "median_cuda_ms": 1.75873601436615,
+      "wall_GB_per_second": 21.27014937360121
+    },
+    {
+      "pattern": "permuted",
+      "mode": "controller_layer_sync",
+      "tokens": 256,
+      "bytes": 37748736,
+      "median_wall_ms": 2.379021607339382,
+      "median_cuda_ms": 2.3653119802474976,
+      "wall_GB_per_second": 15.867336338410528
+    },
+    {
+      "pattern": "permuted",
+      "mode": "enqueue_all_layers",
+      "tokens": 1024,
+      "bytes": 150994944,
+      "median_wall_ms": 7.520009763538837,
+      "median_cuda_ms": 7.502351999282837,
+      "wall_GB_per_second": 20.079088824073995
+    },
+    {
+      "pattern": "permuted",
+      "mode": "controller_layer_sync",
+      "tokens": 1024,
+      "bytes": 150994944,
+      "median_wall_ms": 8.14246665686369,
+      "median_cuda_ms": 8.128384113311768,
+      "wall_GB_per_second": 18.54412800974983
+    },
+    {
+      "pattern": "permuted",
+      "mode": "enqueue_all_layers",
+      "tokens": 2048,
+      "bytes": 301989888,
+      "median_wall_ms": 15.571479685604572,
+      "median_cuda_ms": 15.551360130310059,
+      "wall_GB_per_second": 19.393782357060246
+    },
+    {
+      "pattern": "permuted",
+      "mode": "controller_layer_sync",
+      "tokens": 2048,
+      "bytes": 301989888,
+      "median_wall_ms": 16.279976814985275,
+      "median_cuda_ms": 16.266240119934082,
+      "wall_GB_per_second": 18.54977383764002
+    },
+    {
+      "pattern": "permuted",
+      "mode": "enqueue_all_layers",
+      "tokens": 4096,
+      "bytes": 603979776,
+      "median_wall_ms": 31.83059860020876,
+      "median_cuda_ms": 31.814144134521484,
+      "wall_GB_per_second": 18.974816766280945
+    },
+    {
+      "pattern": "permuted",
+      "mode": "controller_layer_sync",
+      "tokens": 4096,
+      "bytes": 603979776,
+      "median_wall_ms": 32.533216290175915,
+      "median_cuda_ms": 32.51865577697754,
+      "wall_GB_per_second": 18.56501892136574
+    }
+  ],
+  "usage": {
+    "prefill": "Length-dependent lookup; forward span and cold request wall time have different semantics. Neither predicts decode or queueing.",
+    "reload": "Prefer controller_layer_sync wall time for pool transfer cost in this fork. This excludes queueing, radix bookkeeping and contention; cache_e2e records full request observations separately. Do not treat the pool time as full exposed wait.",
+    "interpolation": "Interpolate only within measured lengths as a screening assumption; validate against online runs.",
+    "hardware": "Reprofile after changing GPU, NUMA affinity, backend, layout, capacity, or concurrency."
+  }
+}

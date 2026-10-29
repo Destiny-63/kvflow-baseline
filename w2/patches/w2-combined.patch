@@ -1,0 +1,30 @@
+diff --git a/python/sglang/srt/managers/scheduler.py b/python/sglang/srt/managers/scheduler.py
+index c9a9558..1f9c3ab 100644
+--- a/python/sglang/srt/managers/scheduler.py
++++ b/python/sglang/srt/managers/scheduler.py
+@@ -1871,6 +1871,9 @@ class Scheduler(
+                     continue
+                 elif loading_status == self.tree_cache.REQ_IS_LOADING:
+                     continue
++                if req.host_hit_length > 0:
++                    # Reload completed while this request waited; refresh device indices.
++                    req.init_next_round_input(self.tree_cache)
+ 
+             res = adder.add_one_req(req, has_chunked_req=(self.chunked_req is not None))
+ 
+diff --git a/python/sglang/srt/mem_cache/radix_cache.py b/python/sglang/srt/mem_cache/radix_cache.py
+index d288e76..b620557 100644
+--- a/python/sglang/srt/mem_cache/radix_cache.py
++++ b/python/sglang/srt/mem_cache/radix_cache.py
+@@ -214,6 +214,11 @@ class RadixCache(BasePrefixCache):
+     ##### Public API #####
+ 
+     def reset(self):
++        # Agent references belong to the tree being discarded.
++        if self.agent_manager is not None:
++            with self.agent_manager.lock:
++                self.agent_manager.agent_to_last_nodes.clear()
++                self.agent_manager.agent_last_node_id = None
+         self.root_node = TreeNode(cache=self)
+         self.root_node.key = []
+         self.root_node.value = []

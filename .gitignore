@@ -1,0 +1,8 @@
+.DS_Store
+w2/vendor/KVFlow/
+__pycache__/
+*.pyc
+w2/logs/
+w2/cache/
+w2/models/
+w2/a100/logs/

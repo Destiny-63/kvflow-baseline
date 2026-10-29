@@ -1,0 +1,14 @@
+diff --git a/python/sglang/srt/managers/scheduler.py b/python/sglang/srt/managers/scheduler.py
+index c9a9558..1f9c3ab 100644
+--- a/python/sglang/srt/managers/scheduler.py
++++ b/python/sglang/srt/managers/scheduler.py
+@@ -1871,6 +1871,9 @@ class Scheduler(
+                     continue
+                 elif loading_status == self.tree_cache.REQ_IS_LOADING:
+                     continue
++                if req.host_hit_length > 0:
++                    # Reload completed while this request waited; refresh device indices.
++                    req.init_next_round_input(self.tree_cache)
+ 
+             res = adder.add_one_req(req, has_chunked_req=(self.chunked_req is not None))
+ 

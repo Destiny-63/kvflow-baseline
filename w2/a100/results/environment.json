@@ -1,0 +1,67 @@
+{
+  "python": "3.12.11",
+  "sglang_source": "/workspace/w2/vendor/KVFlow/python/sglang/__init__.py",
+  "sglang_source_version": "0.5.2rc1",
+  "packages": {
+    "sglang": "0.5.2",
+    "torch": "2.8.0+cu126",
+    "transformers": "4.56.1",
+    "sgl-kernel": "0.3.9.post2",
+    "flashinfer-python": "0.3.1",
+    "triton": "3.4.0"
+  },
+  "cuda_runtime": "12.6",
+  "cudnn": 91002,
+  "gpu": "NVIDIA A100 80GB PCIe",
+  "gpu_total_bytes": 85093777408,
+  "compute_capability": [
+    8,
+    0
+  ],
+  "cpu_affinity": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11
+  ],
+  "model": "Qwen/Qwen3-8B",
+  "model_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "model_config": {
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "attention_bias": false,
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 4096,
+    "initializer_range": 0.02,
+    "intermediate_size": 12288,
+    "max_position_embeddings": 40960,
+    "max_window_layers": 36,
+    "model_type": "qwen3",
+    "num_attention_heads": 32,
+    "num_hidden_layers": 36,
+    "num_key_value_heads": 8,
+    "rms_norm_eps": 1e-06,
+    "rope_scaling": null,
+    "rope_theta": 1000000,
+    "sliding_window": null,
+    "tie_word_embeddings": false,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.51.0",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  },
+  "author_commit": "7ef897eaedc16626a281ccfe0d453fae80251e8f",
+  "source_files_sha256": {
+    "managers/scheduler.py": "e1170db4c5665893b6e8b1e65fe88f87cb45ee77c1755d31babc5c19bdcc4c8e",
+    "mem_cache/radix_cache.py": "049bc2681d0c6b5d51c7f97c6f510f64cbd7e274dfed32b3f68ca5a16eb07a75"
+  },
+  "image_digest": "sha256:fce5585fa8da175224ead70727a4660f719e34adf0638aebf6dd27930f03e1b6"
+}

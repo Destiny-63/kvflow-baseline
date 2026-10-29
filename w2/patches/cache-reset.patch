@@ -1,0 +1,16 @@
+diff --git a/python/sglang/srt/mem_cache/radix_cache.py b/python/sglang/srt/mem_cache/radix_cache.py
+index d288e76..b620557 100644
+--- a/python/sglang/srt/mem_cache/radix_cache.py
++++ b/python/sglang/srt/mem_cache/radix_cache.py
+@@ -214,6 +214,11 @@ class RadixCache(BasePrefixCache):
+     ##### Public API #####
+ 
+     def reset(self):
++        # Agent references belong to the tree being discarded.
++        if self.agent_manager is not None:
++            with self.agent_manager.lock:
++                self.agent_manager.agent_to_last_nodes.clear()
++                self.agent_manager.agent_last_node_id = None
+         self.root_node = TreeNode(cache=self)
+         self.root_node.key = []
+         self.root_node.value = []
